@@ -1,7 +1,6 @@
 import axios from "axios";
 import { Repo } from "interface/repo";
 import WithNavbar from "layouts/WithNavbar";
-import { AppContext } from "next/app";
 import React, { useEffect, useState } from "react";
 
 // export async function getServerSideProps(context: AppContext) {

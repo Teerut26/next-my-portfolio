@@ -1,6 +1,5 @@
 import { User } from "interface/user";
 import React from "react";
-import { IconUser } from "./Icon";
 
 interface Props {
     data?: User | null;

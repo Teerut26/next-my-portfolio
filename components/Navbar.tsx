@@ -1,16 +1,12 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { useLocalStorage, useMediaQuery } from "usehooks-ts";
+import { useMediaQuery } from "usehooks-ts";
 import {
-    FaSun,
-    FaMoon,
-    FaHamburger,
     FaBars,
     FaHome,
     FaBook,
 } from "react-icons/fa";
 import { useTheme } from "next-themes";
-import { IconRepository } from "./Icon";
 
 interface link {
     title: string;

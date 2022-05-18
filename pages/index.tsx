@@ -1,16 +1,11 @@
 import CardUser from "@/components/CardUser";
 import Contact from "@/components/Contact";
 import GithubStats from "@/components/GithubStats";
-import Navbar from "@/components/Navbar";
-import { RootState } from "@/store/root";
-import { countActions } from "@/store/slice/counterSlice";
 import axios from "axios";
 import { User } from "interface/user";
 import WithNavbar from "layouts/WithNavbar";
 import type { NextPage } from "next";
-import { AppContext } from "next/app";
 import { useEffect, useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
 
 // export async function getServerSideProps(context: AppContext) {
 //     let { data } = await axios.get<User>(
