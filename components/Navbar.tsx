@@ -38,7 +38,6 @@ const Navbar: React.FC = () => {
 
     return (
         <div className="flex font-semibold justify-between items-center py-5">
-            {/* {showNav ? ( */}
                 <div className={`absolute top-0 bottom-0 right-0 left-0 z-10 bg-base-100 ${showNav ? "w-full" : "w-0"} duration-500 overflow-hidden`}>
                     <div
                         onClick={() => setShowNav((pre) => !pre)}
@@ -49,7 +48,7 @@ const Navbar: React.FC = () => {
                     <div className="flex flex-col mt-10">
                         {links.map((item, idx) => (
                             <Link href={item.href} key={idx}>
-                                <div className="flex py-5 px-2 cursor-pointer select-none">
+                                <div className="flex justify-center py-5 px-2 cursor-pointer select-none">
                                     <div className="flex items-center gap-3 justify-center">
                                         {item.icon}
                                         <div className="uppercase">
@@ -59,7 +58,7 @@ const Navbar: React.FC = () => {
                                 </div>
                             </Link>
                         ))}
-                        <div className="py-5 px-2">
+                        <div className="py-5 px-2 flex justify-center">
                             <label className="swap swap-rotate">
                                 <input
                                     onChange={(e) =>
