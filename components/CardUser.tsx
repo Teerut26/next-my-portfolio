@@ -7,7 +7,7 @@ const CardUser: React.FC<Props> = ({}) => {
     return (
         <>
             <div className="flex justify-center rotate-z-12">
-                <div className="flex justify-between gap-10 mt-[1rem] md:mt-[7rem]">
+                <div className="flex flex-col-reverse md:flex-row flex items-center justify-between gap-10 mt-[1rem] md:mt-[7rem]">
                     <div className="flex flex-col justify-center items-center md:items-start gap-2">
                         <div className="">THIS IS ME</div>
                         <div className="text-4xl font-semibold text-center md:text-start">
@@ -19,14 +19,7 @@ const CardUser: React.FC<Props> = ({}) => {
                             portfolio
                         </div>
                     </div>
-                    <div style={{transform:"rotate(5deg)"}} className="hidden md:block bg-gradient-to-r from-[#FFD34E] to-[#EE467E] w-[10rem] h-[10rem] p-[0.3rem]">
-                        {/* <Image
-                            layout="responsive"
-                            style={{transform:"rotate(355deg)"}}
-                            src="/images/profile.jpg"
-                            width={150}
-                            height={150}
-                        /> */}
+                    <div style={{transform:"rotate(5deg)"}} className=" bg-gradient-to-r from-[#FFD34E] to-[#EE467E] w-[10rem] h-[10rem] p-[0.3rem]">
                         <img style={{transform:"rotate(355deg)"}} src="/images/profile.jpg" alt="" />
                     </div>
                 </div>
